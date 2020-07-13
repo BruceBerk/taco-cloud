@@ -4,5 +4,5 @@ import tacos.Order;
 
 public interface OrderRepository {
 
-    Order save(Order oder);
+    Order save(Order order);
 }

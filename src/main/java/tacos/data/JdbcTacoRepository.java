@@ -55,7 +55,6 @@ public class JdbcTacoRepository implements TacoRepository {
         jdbc.update(
                 "insert into Taco_Ingredients (taco, ingredient) " +
                         "values (?, ?)",
-                tacoId, ingredient,getId());
-        )
+                tacoId, ingredient.getId());
     }
 }
