@@ -8,8 +8,8 @@ import javax.persistence.*;
 import javax.validation.constraints.Digits;
 import javax.validation.constraints.Pattern;
 
-import org.hibernate.validator.constraints.CreditCardNumber;
-import org.hibernate.validator.constraints.NotBlank;
+//import org.hibernate.validator.constraints.CreditCardNumber;
+import javax.validation.constraints.NotBlank;
 
 import lombok.Data;
 
@@ -41,7 +41,7 @@ public class Order implements Serializable {
   @NotBlank(message = "Zip code is required")
   private String deliveryZip;
 
-  @CreditCardNumber(message = "Not a valid credit card number")
+  //@CreditCardNumber(message = "Not a valid credit card number")
   private String ccNumber;
 
   @Pattern(regexp = "^(0[1-9]|1[0-2])([\\/])([1-9][0-9])$",
